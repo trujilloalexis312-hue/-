@@ -1,0 +1,140 @@
+* { box-sizing: border-box; }
+.stage {
+  overflow: hidden;
+  background: #082b20;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #18231b;
+}
+.lighting {
+  background:
+    radial-gradient(ellipse 55% 30% at 30% 13%, #305b1d 0%, transparent 100%),
+    radial-gradient(ellipse 46% 40% at 97% 43%, #355d1d 0%, transparent 100%),
+    radial-gradient(ellipse 42% 39% at 3% 88%, #1f451c 0%, transparent 100%),
+    linear-gradient(142deg, #14351e, #052a21 62%, #10321f);
+}
+.float { position: absolute; width: max-content; }
+.card {
+  border-radius: 30px;
+  background: #fdfef9;
+  padding: 31px 28px;
+  box-shadow: 0 2px 9px #00241925, inset 0 0 0 1px #fff;
+}
+.card header, .spread { display: flex; align-items: center; justify-content: space-between; }
+.card header { font-size: 20px; }
+.card header > span { color: #839862; font-size: 15px; }
+.income { width: 664px; height: 363px; }
+.source { margin-top: 24px; font-size: 19px; }
+.source b, .transaction b { font-weight: 600; }
+.track {
+  background: #e9efdf;
+  height: 7px;
+  border-radius: 10px;
+  margin: 7px 0 4px;
+}
+.track div { height: 100%; background: #86d314; border-radius: inherit; box-shadow: 0 0 5px #90df2850; }
+.source small, .transaction small { display: block; color: #858b7f; }
+.source small { font-size: 10px; }
+.invoice { width: 670px; height: 604px; font-size: 15px; }
+.invoice header { align-items: start; font-size: 24px; }
+.invoice-id { text-align: right; }
+.invoice-id small { display: block; color: #808077; font-size: 13px; margin-top: 5px; }
+.invoice-id em { color: #897b42; font-style: normal; }
+.addresses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 24px 0;
+  padding: 23px 24px;
+  line-height: 1.8;
+  background: #f4f5f1;
+}
+.dates { display: grid; grid-template-columns: repeat(2, 1fr); width: 66%; line-height: 1.9; margin-bottom: 22px; }
+.line-item {
+  display: grid;
+  grid-template-columns: 2fr .48fr .82fr .82fr;
+  text-align: right;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #e7eae3;
+}
+.line-item span:first-child { text-align: left; }
+.line-item.labels { color: #74786f; border-top: 1px solid #e7eae3; }
+.total {
+  display: grid;
+  width: max-content;
+  grid-template-columns: auto auto;
+  gap: 8px 18px;
+  margin: 18px 0 0 auto;
+  text-align: right;
+}
+.total strong { font-size: 19px; }
+.transactions { width: 652px; height: 536px; }
+.transactions header { margin-bottom: 20px; }
+.transaction {
+  display: grid;
+  grid-template-columns: 38px 1fr auto;
+  column-gap: 13px;
+  align-items: center;
+  border-bottom: 1px solid #f0f2e9;
+  min-height: 81px;
+  font-size: 20px;
+}
+.transaction:last-child { border-bottom: none; }
+.transaction small { margin-top: 4px; font-size: 13px; }
+.transaction i {
+  font-style: normal;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 36px;
+  border-radius: 8px;
+  background: #f1f5e9;
+  color: #728b59;
+}
+.transaction.debit b { color: #a55868; }
+.transaction.debit:nth-of-type(4) i { color: #a55868; background: #f9e9eb; }
+.expenses { width: 230px; height: 280px; padding: 19px 22px; border-radius: 17px; font-size: 11px; }
+.donut {
+  display: grid;
+  place-items: center;
+  margin: 20px auto 15px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: conic-gradient(#efa33f 0 36%, #8ed319 36% 69%, #3b75e3 69% 100%);
+}
+.donut > div {
+  border-radius: 50%;
+  background: #fdfef9;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.donut b { font-size: 18px; }
+.donut small { color: #70796d; }
+.legend { display: grid; gap: 8px; }
+.legend i, .category-label i { display: inline-block; border-radius: 4px; width: 17px; height: 10px; margin-right: 7px; }
+.categories { width: 380px; height: 244px; padding: 32px 35px; color: #777e73; letter-spacing: 1.2px; }
+.category-bar { height: 80px; border-radius: 16px; margin: 24px 0; background: #3a76de; }
+.category-label { letter-spacing: 0; font-size: 17px; }
+.category-label i { border-radius: 50%; width: 18px; height: 18px; vertical-align: middle; background: linear-gradient(#488ded, #185dc8); }
+.title {
+  color: #d6ff74;
+  text-shadow: 0 0 7px #bcff67, 0 0 24px #a3ed42a0;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -1.7px;
+  line-height: 1.14;
+  text-align: center;
+  white-space: pre;
+}
+.spark {
+  position: absolute;
+  width: 80px;
+  height: 27px;
+  border-radius: 40px;
+  background: #ddff79;
+  box-shadow: 0 0 10px #d9ff6b, 0 0 28px #bdfc4c, 0 0 53px #adf449a0;
+}
