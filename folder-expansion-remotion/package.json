@@ -1,0 +1,20 @@
+{
+  "name": "folder-expansion-remotion",
+  "version": "1.0.0",
+  "description": "Remotion recreation of the Folder Expansion animation",
+  "scripts": {
+    "start": "remotion studio src/index.jsx",
+    "render": "remotion render src/index.jsx FolderExpansion out/folder-expansion.mp4"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@fontsource/noto-serif-sc": "5.3.1",
+    "@remotion/cli": "4.0.545",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.545"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
