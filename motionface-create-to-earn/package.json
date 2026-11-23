@@ -1,0 +1,17 @@
+{
+  "name": "motionface-create-to-earn",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio src/index.jsx",
+    "render": "remotion render src/index.jsx CreateToEarn out/create-to-earn.mp4",
+    "predev": "node scripts/audio.mjs",
+    "prerender": "node scripts/audio.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.545",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.545"
+  }
+}
