@@ -1,0 +1,93 @@
+.scene {
+  overflow: hidden;
+  background: linear-gradient(#18200f, #151c0e 55%, #111113 56%);
+  font-family: SceneSerif, serif;
+  font-style: italic;
+  color: #f5f7ed;
+}
+.arc { position: absolute; translate: -50% 0; }
+.arc > div {
+  position: absolute;
+  inset: 0;
+  border: 21px solid #83ed0a;
+  border-radius: 50%;
+}
+.arc > div:nth-child(1) { border-width: 85px; margin: -32px; filter: blur(72px); opacity: .87; }
+.arc > div:nth-child(2) { border-width: 44px; margin: -12px; filter: blur(28px); }
+.arc > div:nth-child(3) { border-color: #a5ff34; filter: blur(13px); opacity: .86; }
+.floor {
+  position: absolute;
+  inset: 610px 0 0;
+  background:
+    radial-gradient(ellipse at 0 126%, #263d12 0, transparent 42%),
+    radial-gradient(ellipse at 100% 123%, #263911 0, transparent 42%),
+    #121214;
+}
+.heading {
+  position: absolute;
+  top: 119px;
+  width: 100%;
+  text-align: center;
+  font-size: 69px;
+  font-weight: 700;
+  line-height: 1.08;
+}
+.eyebrow { height: 58px; font-size: 34px; line-height: 1.4; }
+.item { position: absolute; width: 262px; height: 262px; }
+.card {
+  position: relative;
+  width: 262px;
+  height: 262px;
+  overflow: hidden;
+  border-radius: 20%;
+  background: linear-gradient(132deg, #f7f8f1, #e3e6dc 61%, #f3f8e7);
+  box-shadow: inset 0 0 0 2px #fff9, inset 0 0 13px #fff8;
+}
+.large-number, .small-number {
+  position: absolute;
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #6acc0a;
+}
+.large-number {
+  translate: -50% -48%;
+  font-size: 222px;
+  text-shadow: 4px 10px 22px #79cb2b99, 14px 13px 50px #8bee37;
+}
+.small-number { top: 0; right: 29px; font-size: 78px; }
+.preview { position: absolute; inset: 0; color: #426b19; }
+.count { position: absolute; top: 19px; left: 39px; font-size: 22px; font-weight: bold; }
+.thumbnail { position: absolute; width: 85%; height: 52%; left: 7.5%; top: 30%; border-radius: 9px; }
+.caption {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  text-align: center;
+  font: italic 18px 'Times New Roman', serif;
+}
+.folder {
+  position: absolute;
+  top: 68px;
+  left: 25px;
+  width: 205px;
+  height: 40px;
+  border-radius: 10px;
+  background: #95be4c;
+  rotate: -4deg;
+}
+.labels { position: absolute; top: 100%; width: 100%; text-align: center; }
+.title { margin-top: 3px; font-size: 32px; line-height: 1.50; font-weight: 700; }
+.detail { font-size: 23px; font-weight: 700; color: #eeeee3; }
+.reflection {
+  position: absolute;
+  top: calc(100% + 95px);
+  width: 100%;
+  height: 100%;
+  transform: scaleY(-0.84);
+  transform-origin: center top;
+  translate: 0 220px;
+  filter: blur(8px);
+  mask-image: linear-gradient(transparent 33%, #0005 76%, #000 100%);
+  opacity: .12;
+}
